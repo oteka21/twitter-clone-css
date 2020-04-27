@@ -1,0 +1,145 @@
+html{
+  box-sizing: border-box;
+  font-family: system-ui, Helvetica;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+ul, li, h1, h2, h3, p, button {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+button { 
+  background : transparent;
+  border: 0;
+  outline: 0
+}
+/* styles of page */
+:root{
+  --primary-background: #000000;
+  --primary-color: #fff;
+  --secondary-color: #1DA1F2;
+  --secondary-background: #15181C;
+  --tertiary-color: #687077;
+}
+
+body{
+  background-color: var(--primary-background);
+  color: var(--primary-color);
+  margin: 0;
+}
+.container{
+  display: grid;
+}
+
+.feed-header{
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  background: var(--primary-background);
+  border-bottom: 1.5px solid var(--secondary-background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.profile-pic{
+  border-radius: 50%;
+  width: 35px;
+  margin-right: 10px;
+}
+
+.title{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.starts-icon{
+  width: 23px;
+  margin-left: auto;
+}
+
+.starts-icon svg{
+  fill: var(--secondary-color);
+}
+
+
+.history{
+  margin-top: 55px;
+}
+
+.tweet{
+  border-bottom: 1.5px solid var(--secondary-background);
+  padding: 6px 12px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.user-prof{
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.tweet-content{
+  width: 100%;
+}
+
+.tweet-meta{
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.tweet-name{
+  margin-right: 5px;
+}
+
+.tweet-username, .tweet-time{
+  font-size: 14px;
+  color: var(--tertiary-color);
+  margin-right: 14px;
+  position: relative;
+}
+
+.tweet-time::before{
+  content: ".";
+  position: absolute;
+  top: -3px;
+  left: -9px;
+}
+
+.tweet-main-content{
+  margin-bottom: 8px;
+}
+
+.actions{
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-icon{
+  display: flex;
+  align-items: center;
+}
+
+.action-icon p{
+  font-size: 12px;
+  color: var(--tertiary-color);
+}
+
+.action-icon svg{
+  width: 20px;
+  margin-right: 5px;
+  fill: var(--tertiary-color);
+  display: block;
+}
+
+
+
+
